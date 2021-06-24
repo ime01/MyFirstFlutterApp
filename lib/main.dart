@@ -20,16 +20,18 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
 
-      body: Center(
+      body: Padding(
+        padding: EdgeInsets.all(90),
+        child: Text('hello'),
+      ),
 
-        child:IconButton(
-          onPressed: (){
-            print('YOU CLICKED ME');
-          },
-          icon: Icon(Icons.alternate_email),
-          color: Colors.amber,
 
-        )
+      // Container(
+      //   padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+      //   margin: EdgeInsets.all(30),
+      //   color: Colors.grey[400],
+      //   child: Text('Hello'),
+      // ),
 
 
 
@@ -48,7 +50,6 @@ class Home extends StatelessWidget {
         // //  Image.asset('assets/tractor2.jpg')
         // //  Image.network('https://images.unsplash.com/photo-1568607689150-17e625c1586e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80')
         // )
-      ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
